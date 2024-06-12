@@ -24,5 +24,5 @@
     - Energieträger Heizöl, Berücksichtigung WW pauschal & mittels Anlage zur solaren WW-Erzeugung
     - Anfang & Enddatum für die Berücksichtung im Ausweis eingetragen
 - Bautechnik:
-    Gebäudedaten, Angaben: Bruttovolumen geheizte Fläche (EG + DG -> 10,328x10,568x(2,53+0,18) + 10,568x10,328x(4,07+0,21)/2 (m))
+    Gebäudedaten, Angaben: Bruttovolumen geheizte Fläche (EG + DG -> 10,328x10,568x(2,53+0,18) + 10,568x10,328x(4,07+0,21)/2 (m)) !!!!!!!!!!vermutlich nicht richtig, Treppenhaus fehlt"
 --> weitermachen bei Bodenfläche, Fragestellung der thermischen Hüllfläche (beim nächsten mal auch markieren))
