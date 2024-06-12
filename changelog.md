@@ -15,7 +15,7 @@
     - zusätzliche Berechnung für BEG Effizienzhaus anwählen, Verrechnung Nachtstrom deaktivieren
 - Bei zusätzliche Berechnung Ökonomie, sommerl. Wärmeschutz, Nutzung erneuerbarer Energien für Heizung & Gebäudeheizlast nach DIN 12831 an
 - Haken bei Angabe iSFP, Energieausweis & Bauteilanforderungen für Einzelmaßnahmen an
-- Bei Angaben zur BEG Gebäudekategorie, WE und WOhnfläche eingetragen
+- Bei Angaben zur BEG Gebäudekategorie, WE und Wohnfläche eingetragen
     - Annahme: Auftraggeber ist Eigentümer, weil Beschreibung das nahelegt, daher dito für Art der Antragstellung
 - Erfassung Energieverbrauch:
     - allg. Daten: Nutzfläche füllt sich durch spätere Eingaben des Bruttovolumens unter Bautechnik
@@ -24,5 +24,26 @@
     - Energieträger Heizöl, Berücksichtigung WW pauschal & mittels Anlage zur solaren WW-Erzeugung
     - Anfang & Enddatum für die Berücksichtung im Ausweis eingetragen
 - Bautechnik:
-    Gebäudedaten, Angaben: Bruttovolumen geheizte Fläche (EG + DG -> 10,328x10,568x(2,53+0,18) + 10,568x10,328x(4,07+0,21)/2 (m)) !!!!!!!!!!vermutlich nicht richtig, Treppenhaus fehlt"
---> weitermachen bei Bodenfläche, Fragestellung der thermischen Hüllfläche (beim nächsten mal auch markieren))
+    Gebäudedaten, Angaben: Bruttovolumen geheizte Fläche (EG + DG -> 10,328x10,568x(2,53+0,18) + 10,568x10,328x(4,07+0,21)/2 (m³)), so noch nicht richtig weil Treppenhaus noch nicht klar definiert innerhalb der therm. Hüllfläche
+    Randbedingungen: Ständerbauweise daher Bauweise leicht, Wärmebrückenkorrektur 0,10W/m²K, nur zentral beheizt, keine Lüftungsanlage, unteren Gebäudeabschluss mit Korrekturfaktor weil unbeheizter Keller, Warmwasserbedarf vorhanden
+
+
+## 2024-06-12 Jan
+
+- Festlegung Fragestellung thermische Hüllfläche im Kellertreppenbereich. 
+    - Möglichkeit 1: Dämmen der an TRH anliegenden Wände im Erdgeschuss und der Treppe zum OG von unten, Einbau einer Wärmeschutztür im EG
+    - Möglichkeit 2: Dämmen der an TRH anliegenden Wände im im Keller, Einbau einer zusätzlichen Wärmeschutztür am Fuß der Treppe, Dämmen der Treppe soweit wie möglich im Keller, Dämmen Kellerboden innerhalb der thermischen Hüllfläche, sowie die Außenwand des TRH von innen.
+    - Wahl von Möglichkeit 2 - Begründung: Maßnahme erfordert keine bauliche Änderung im Wohnbereich, daher keine Belastung der Bewohner während der Bauzeit. Zwar sollten die Wände des TRH im EG ebenfalls Ständerbauweise sein, bei einer Stärke von nur 92mm und der Annahme, dass der Aufbau der abgebildeten Außenwände ähnelt, dann ist die Gefachtiefe 50mm oder weniger und eine zusätzliche Innenwanddämmung wird notwendig, um auf die erforderlichen U-Werte zu kommen. 
+        - Entscheidung beeinflusst die thermische Hüllflache und dementsprechend das Volumen. Angenähert kommen zusätzlich 2.47x(0,75+2x0,24)x3,52/2 (m³) = 5.35m³ dazu. Zusätzliche Eingabe im Gebäudevolumen
+        
+    -Bautechnik
+        - Belüftung: über Durchlässe und Fenster, Fall III
+        - unterer Gebäudeabschluss: Weil Keller nicht beheizt und aufgrund Festlegung im TRH "angrenzend an unbeheizten Keller ohne Perimeterdämmung
+        - Bodenfläche ist Bruttofläche (10,28x10,52) (m²) - (0,75+2x0,24)x(3,52+0,365)(m²) = 103,67m², ist scheinbar nicht relevant daher nur Eingabe Bodenfläche (Vermutlich weil Fläche über die entsprechende Bauteilfläche später eingegeben werden)
+        - Umfang Bodenfläche ist der Rohbauumfang 2x10,28+2x10,52 (Kellertür übermessen weil ohnehin unbeheizt)
+        - Gebäudeautomation: keine Änderung an den Eingaben
+    - Bauteile:
+        - Südwand EG Kinderzimmer & Rest zugefügt. Konstruktion für Wand EG angelegt und in DB gespeichert. FÜr Konstruktion die Bauteilwerte für Faserzementplatte recherchiert.
+        - restlichen Wände EG ergänzt aus Katalogteil. Offener Punkt ist der einzelne Balken zwischen den Doppelfenstern, hier weicht die Konstruktion vermutlich ab.
+        - Haustür zugefügt, Fenster Nordwand zugefügt. Problem: Lt Prospektauszug dins die Fenster dreifach verglast, in Helena gibt es nur die Option zur Zweifachverglasung aus der Bauzeit. Internetrecherche hat auch keine ausreichenden Infos zur "korrekten" Berechnung mit psi, Ug & Uf Werten ergeben. 
+            - Frage: Lt Prospekt "alle" Bauteile 40% besser als Wärmeschutzverordnung, das wären dann 3,5W/m²K x 0,6 also ca. 2,1 W/m²K (erscheint mir zu gut für das Baujahr...). Diesen Wert verwenden
