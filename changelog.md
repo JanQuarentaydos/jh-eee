@@ -47,3 +47,19 @@
         - restlichen Wände EG ergänzt aus Katalogteil. Offener Punkt ist der einzelne Balken zwischen den Doppelfenstern, hier weicht die Konstruktion vermutlich ab.
         - Haustür zugefügt, Fenster Nordwand zugefügt. Problem: Lt Prospektauszug dins die Fenster dreifach verglast, in Helena gibt es nur die Option zur Zweifachverglasung aus der Bauzeit. Internetrecherche hat auch keine ausreichenden Infos zur "korrekten" Berechnung mit psi, Ug & Uf Werten ergeben. 
             - Frage: Lt Prospekt "alle" Bauteile 40% besser als Wärmeschutzverordnung, das wären dann 3,5W/m²K x 0,6 also ca. 2,1 W/m²K (erscheint mir zu gut für das Baujahr...). Diesen Wert verwenden
+
+# 2024-06-13 Jan
+
+- Bauteile Fenster, Fortsetzung mit U Wert 2,1
+    - Im EG Plan sind die WZ-Fenster nicht korrekt eingezeichnet, auf Fotor ist erkennbar, dass nicht bodentief - augenscheinlich aber größer als restl. EG Fenster. Aus den bekannten Maßen kann man ca. 1,5m abschätzen
+    - Situation im Kinderzimmer nicht klar aus Plan erkennbar, lt. ergänzten Maßen  sind zwei bodentiefe Bauteile vorhanden, lt. Beschreibung mind. 1 Tür --> Annahme:  1x Tür 1x bodentiefes Fenster
+- Himmelsrichtungen in den Wänden ergänzt
+- Kellerdecke als Bauteil angelegt
+- Giebelwände als Bauteil angelegt. (Luftschicht im Gefach als zusätzliche Schicht mit Gefachung umgesetzt)
+    - Fenster in Giebelwänden zugefügt
+- Dachseiten als Bauteil angelegt
+    - Dachneigung (38°) & Giebellänge (6,56m) über Trigonometrie bestimmt
+    - Dachbauteil vernachlässigt alle Schichten oberhalb der belüfteten. Ggf. hier ein vermutl. vernachlässigbarer Fehler weil Sparren theoretisch in belüftete Ebene reinragen, aber vernachlässigbar
+- Innenwände Richtung Keller als Bauteile angelegt.
+    - Kein Aufbau verfügbar, wird daher aus Außenbauschichten approximiert. Naheliegenderweise auch Ständerbauweise in übl. Bauholzmaßen mit Plattenbeschichtung identisch zu den Innenseiten der Außenwände. Kleinere Ungereimtheiten bzgl. Dicke ggü. des Grundrisses werden im Sinne des Realismus akzeptiert
+- Treppe Richtung DG als Vollholztreppe mit 40mm  Stärke + Gipsbeplankung angenommen. Erscheint für Bauweise plausibel. 
