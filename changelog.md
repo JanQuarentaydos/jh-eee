@@ -63,3 +63,4 @@
 - Innenwände Richtung Keller als Bauteile angelegt.
     - Kein Aufbau verfügbar, wird daher aus Außenbauschichten approximiert. Naheliegenderweise auch Ständerbauweise in übl. Bauholzmaßen mit Plattenbeschichtung identisch zu den Innenseiten der Außenwände. Kleinere Ungereimtheiten bzgl. Dicke ggü. des Grundrisses werden im Sinne des Realismus akzeptiert
 - Treppe Richtung DG als Vollholztreppe mit 40mm  Stärke + Gipsbeplankung angenommen. Erscheint für Bauweise plausibel. 
+- ??????Heizbedarf Wizard mal ausprobiert. Ergebnis für Bedarf ergibt sich jetzt, ist aber viel zu schlecht ???????
