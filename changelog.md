@@ -1,6 +1,14 @@
 # Changelog Hausarbeit EEE 
 
-# 2024-06-15 Jan
+
+## 2024-06-20 Jan
+- Verteilleitung geändert von Standardwert (Begründung: Standardwert >154m ist vollkommen unrealistisch) auf 20 m
+- EIngabe von Preisen für Wirtschaftlichkeit
+- Exkurs in Kostenfunktionen Excel: 
+    - Daten Übernommen: Heizlast, Wohnfläche, WE, Wärmeerzeuger
+    - Baupreisindex & Ortsfaktor bestimmt
+    - Baunebenkosten gem. pauschale integriert
+## 2024-06-15 Jan
 - Fenster auf Wert aus Aufgabenstellung korrigiert
 - Anpassungen in Heizung, Standardkessel, Vorlauftemperatur, Fläche Solarkollektor, Brenner, Speicherbaujahr, u.a.
 - Start Varianten:
