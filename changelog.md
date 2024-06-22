@@ -1,17 +1,53 @@
 # Changelog Hausarbeit EEE 
 
+## 2024-06-22 Jan
+- Bemerkt, dass Varianten nicht ordentlich gespeichert wurden
+- Wintergartenmaß korrigiert
+- Kosten Innentür mit Rationale versehen, weswegen von Haus Dorla Situation abgewichen wurde
+- Varianten angelegt (alle im Fahrplanmodus, Beschreibung automatisch)
+    - V1 ist offensichtlich wirtschaftlichste Maßnahme -> Kellerdämmung
+    - V2 ist der Tausch der Heizung aufgrund des Alters der Bestandsheizung
+        - zum Vergleich der Varianten werden Holzhackschnitzel als V2 (Kunden steht Holz zur Verfügung) ggü. Luft Wasser Wärmepumpe (V2.1) angelegt 
+        - weitere WP Varianten haben X.1 Suffix, sind ansonsten identisch zu X Variante.
+    -V3 Austausch Fenster & Außentüren, Einbau Lüftungsanlage + Nachweis WB + Luftdichtheitsmessung. Aufgrund der pot. problematischen Änderungen der Luftdichtheit im Gebäude, sollten die Maßnahmen kombiniert werden. Baubegleitungskosten -> Luftdichtheitsmessung ist notwendig, weil Lüftungsanlage eingebaut wird. Architektenleistung als Zusatzkosten (gedrittelt wg. späterer Maßnahmen, für Fenster & Türentausch)
+    - V4 Fassadendämmung Baubegleitungskosten -> Architektenleistung als Zusatzkosten (gedrittelt wg. späterer Maßnahmen, für Fassade)
+    - V5 Dachneueindeckung + Aufsparrendämmung Baubegleitungskosten -> Architektenleistung als Zusatzkosten (gedrittelt wg. vorheriger Maßnahmen, für Dach)
+- Gemis für Holzhackschnitzel geprüft, kein gutes Ergebnis gefunden
+
+
 
 ## 2024-06-20 Jan
 - Verteilleitung geändert von Standardwert (Begründung: Standardwert >154m ist vollkommen unrealistisch) auf 20 m
-- EIngabe von Preisen für Wirtschaftlichkeit
+- Eingabe von Preisen für Wirtschaftlichkeit
 - Exkurs in Kostenfunktionen Excel: 
     - Daten Übernommen: Heizlast, Wohnfläche, WE, Wärmeerzeuger
     - Baupreisindex & Ortsfaktor bestimmt
     - Baunebenkosten gem. pauschale integriert
+
+*ToDos* 
+- Wintergartenmaß noch korrigieren
+- Kosten für Innentür aus Dorla übernehmen
+
+
 ## 2024-06-15 Jan
 - Fenster auf Wert aus Aufgabenstellung korrigiert
 - Anpassungen in Heizung, Standardkessel, Vorlauftemperatur, Fläche Solarkollektor, Brenner, Speicherbaujahr, u.a.
 - Start Varianten:
+    - Maßnahmen ( bei allen Maßnahmen kombiniert mit Auswahl der Kosten für ):    
+        - Überarbeitung Kellerbauteil Keller 80mm PIR
+        - Überarbeitung Innenwand 92mm
+        - Überarbeitung Innenwand 122mm
+        - Austausch Kellertür
+        - Heizungstausch Holzhackschnitzel (ohne Variantenassistent)
+        - Kopie der Maßnahme Heizungstausch Holzhackschnitzel + Lüftungsanlage
+        - Maßnahme Bautechnik für Wärmebrückennachweis + Lüftdichtheitsmessung
+        - Austausch Haustür Ud 1,3
+        - Austausch Fenster Fenster Uw 0,9
+        - Austausch Außenüren Rest Ud 0,9 (weil Balkontüren, daher gleiche Berechnung U-Wert wie Fenster und weil realitätsnah auch die gleiche Rahmenstruktur & Verglasung wie bei Fenstern gewählt werden würde)
+        - Fassadendämmung Bauteil Außenwände & Giebelwände angepasst (Keine Nutzung des GEfach des Ständerwerks um die wahrscheinlich asbesthaltigen Platten nicht zu beschädigen)
+        - Dachbauteil erneuert. Auch wenn scheinbar ausreichend Zwsp-Dämmung Bauteiltiefe zur Verfügung stehen würde, muss das Bauteil komplett überarbeitet werden, da andernfalls in die Lüftungsebenen des Kaltdachs eingegriffen würde. Daher vollständige Erneuerung des Dachs von außen, kombiniert mit Holzfaserdämmung weil Kunde sich natürliche Dämmstoffe wünscht und weil hier Holzfaser aufgrund der guten sommerlichen Wärmeschutzwerte Vorteile bringt.
+        - Variante Heizungstausch Luft Wasser WP (ohne Variantenassistent)
+        - Kopie der Maßnahme Heizungstausch Luft Wasser WP + Lüftungsanlage
     
 
 ## 2024-06-13 Jan
